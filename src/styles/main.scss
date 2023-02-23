@@ -1,4 +1,5 @@
-@use "./variables.scss";
+@use "./variables";
+@use "./top-nav";
 
 * {
     margin: 0;
@@ -7,4 +8,19 @@
     list-style: none;
     text-decoration: none;
     background-color: variables.$colorDark;
+    font-family: "DM Sans", sans-serif;
+    color: variables.$colorWhite;
+}
+
+header {
+    padding-top: 40px;
+    @media(max-width:768px){
+        padding-top: 20px;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
