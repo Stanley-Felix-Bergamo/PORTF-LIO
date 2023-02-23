@@ -15,24 +15,40 @@
 <body>
     <header>
         <section class="top-nav">
-            <div>
-                <h1 class="top-nav__logo">Portfólio</h1>
+            <div class="container container--flex">
+                <div>
+                    <h1 class="top-nav__logo">Portfólio</h1>
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='top-nav__menu-button-container' for="menu-toggle">
+                    <div class='top-nav__menu-button'></div>
+                </label>
+                <ul class="top-nav__menu">
+                    <li class="top-nav__menu__item"><a class="top-nav__menu__item__link" href="#">Sobre mim</a></li>
+                    <li class="top-nav__menu__item"><a class="top-nav__menu__item__link" href="#">Conhecimento</a></li>
+                    <li class="top-nav__menu__item"><a class="top-nav__menu__item__link" href="#">Projetos</a></li>
+                </ul>
             </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='top-nav__menu-button-container' for="menu-toggle">
-                <div class='top-nav__menu-button'></div>
-            </label>
-            <ul class="top-nav__menu">
-                <li class="top-nav__menu__item"><a href="#">Sobre mim</a></li>
-                <li class="top-nav__menu__item"><a href="#">Conhecimento</a></li>
-                <li class="top-nav__menu__item"><a href="#">Projetos</a></li>
-            </ul>
         </section>
     </header>
 
-    <section>
-        
+    <section class="hero">
+        <div class="container container--flex">
+            <div class="hero__cv">
+                <h2 class="hero__cv__titulo">Olá, eu sou o Stanley Felix Bergamo</h2>
+                <p class="hero__cv__subTitulo">Engenheiro Front-end</p>
+                <div class="botao">
+                    <a class="button" href="#">Download CV</a>
+                    <a class="button button--secondary" href="#">Entrar em contato</a>
+                </div>
+            </div>
+
+            <div class="hero__image">
+                <img class="hero__image__img" src="./dist/imagem/image-4.svg" alt="Imagem ilustrativa">
+            </div>
+        </div>
     </section>
+
 </body>
 
 
