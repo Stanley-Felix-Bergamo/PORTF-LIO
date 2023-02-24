@@ -1,6 +1,7 @@
 @use "./variables";
 @use "./top-nav";
 @use "./hero";
+@use "./sobre-mim";
 
 * {
     margin: 0;
@@ -19,15 +20,32 @@ header {
         padding-top: 20px;
     }
 }
+ion-icon {
+    color: variables.$colorGreen;
+    font-size: 32px;
+    padding-bottom: 19px;
+    border: 2px solid variables.$colorGray-3;
+    background-color: variables.$colorGray-3;
+    border-radius: 180px;
+    padding: 17px;
 
+    @media (max-width: 768px) {
+        font-size: 24px;
+        padding: 10px;
+    }
+}
 .container {
     width: 100%;
-    max-width: 1024px;
+    max-width: 900px;
     margin: 0 auto;
-    @media (max-width: 768px) {
-        max-width: 80%;
-    }
     @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 60%;
+    }
+    @media (max-width: 468px) {
         max-width: 90%;
     }
 

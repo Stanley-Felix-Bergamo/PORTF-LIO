@@ -1,0 +1,59 @@
+@use "./variables";
+.bio {
+    text-align: center;
+    &__titulo {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    &__texto {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 30px 0 85px 0;
+    }
+}
+.redes {
+    padding-bottom: 127px;
+    &__list {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        &__titulo {
+            padding: 19px 0 5px 0;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &__texto {
+            color: variables.$colorGray;
+            font-size: 13px;
+            font-weight: 400;
+            padding-bottom: 45px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .bio {
+        &__titulo {
+            font-size: 24px;
+        }
+
+        &__texto {
+            font-size: 14px;
+        }
+    }
+
+    .redes {
+        &__list {
+            grid-template-columns: repeat(2, 49%);
+            &__titulo {
+                font-size: 13px;
+            }
+
+            &__texto {
+                font-size: 10px;
+            }
+        }
+    }
+}
