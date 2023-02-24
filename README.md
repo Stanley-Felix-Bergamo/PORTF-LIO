@@ -1,5 +1,12 @@
-# Portfólio <img align="right" src="https://img.shields.io/static/v1?label=STATUS&message=Está %20em andamento&color=red&style=for-the-badge"/>
+# Portfólio <img align="right" src="https://img.shields.io/static/v1?label=STATUS&message=Está %20Pronto &color=green&style=for-the-badge"/>
 
+
+<div align="center" >
+    <img width="725rem" src="https://servidor-estaticos-ten.vercel.app/port.png" alt="imagem">
+</div> 
+<br>
+
+> Para ver o projeto rodando você pode acessar este [Link](https://portfolio-omega-beryl-31.vercel.app/).
 
 <h2>💻 Tecnologias utilizadas</h2>
 <div style="display: inline_block">
