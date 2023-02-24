@@ -121,17 +121,17 @@ ion-icon {
             background-color: lighten(variables.$colorGray-2, 10%);
         }
     }
-    @media (max-width: 768px) {
-        width: 150px;
-        height: 30px;
-        height: 42px;
-        font-size: 9.79px;
-        padding: 15px 43.5px;
+    // @media (max-width: 768px) {
+    //     width: 150px;
+    //     height: 30px;
+    //     height: 42px;
+    //     font-size: 9.79px;
+    //     padding: 15px 43.5px;
 
-        &--secondary {
-            padding: 15px 32px;
-        }
-    }
+    //     &--secondary {
+    //         padding: 15px 32px;
+    //     }
+    // }
 }
 
 .caixa {
