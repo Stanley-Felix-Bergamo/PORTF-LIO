@@ -37,6 +37,22 @@ ion-icon {
     }
 }
 
+footer {
+    text-align: center;
+    background-color: variables.$colorGray-3;
+    padding: 20px;
+    p,
+    span {
+        background-color: variables.$colorGray-3;
+    }
+    span {
+        color: variables.$colorGreen;
+    }
+    @media (max-width: 800px) {
+        font-size: 12px;
+    }
+}
+
 .container {
     width: 100%;
     max-width: 1024px;
