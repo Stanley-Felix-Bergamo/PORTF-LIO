@@ -121,20 +121,10 @@ ion-icon {
             background-color: lighten(variables.$colorGray-2, 10%);
         }
     }
-    // @media (max-width: 768px) {
-    //     width: 150px;
-    //     height: 30px;
-    //     height: 42px;
-    //     font-size: 9.79px;
-    //     padding: 15px 43.5px;
-
-    //     &--secondary {
-    //         padding: 15px 32px;
-    //     }
-    // }
 }
 
 .caixa {
+    width: 100%;
     padding: 32px;
     background-color: variables.$colorGray-3;
     border: solid 1px variables.$colorGray-2;
@@ -142,4 +132,10 @@ ion-icon {
     align-items: center;
     width: 115px;
     height: 105px;
+
+    @media (max-width: 768px) {
+        padding: 21px;
+        width: 90px;
+        height: 70px;
+    }
 }
