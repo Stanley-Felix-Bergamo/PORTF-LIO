@@ -1,4 +1,9 @@
 @use "./variables";
+
+#Sobre-mim {
+    padding-top: 30px;
+}
+
 .bio {
     text-align: center;
     &__titulo {
@@ -12,12 +17,13 @@
         padding: 30px 0 85px 0;
     }
 }
+
 .redes {
     padding-bottom: 127px;
     &__list {
         text-align: center;
         display: grid;
-        grid-template-columns: repeat(5, 19%);
+        grid-template-columns: repeat(3, 33.33%);
         &__titulo {
             padding: 19px 0 5px 0;
             font-size: 18px;
@@ -45,6 +51,7 @@
     }
 
     .redes {
+        padding-bottom: 50px;
         &__list {
             grid-template-columns: repeat(2, 49%);
             &__titulo {

@@ -2,6 +2,7 @@
 @use "./top-nav";
 @use "./hero";
 @use "./sobre-mim";
+@use "./conhecimento";
 
 * {
     margin: 0;
@@ -20,6 +21,7 @@ header {
         padding-top: 20px;
     }
 }
+
 ion-icon {
     color: variables.$colorGreen;
     font-size: 32px;
@@ -34,9 +36,10 @@ ion-icon {
         padding: 10px;
     }
 }
+
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
     @media (max-width: 1024px) {
         max-width: 90%;
@@ -51,6 +54,45 @@ ion-icon {
 
     &--flex {
         display: flex;
+    }
+}
+.container-2 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 60%;
+    }
+    @media (max-width: 468px) {
+        max-width: 90%;
+    }
+}
+
+.link {
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: variables.$colorGreen;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 }
 
@@ -90,4 +132,14 @@ ion-icon {
             padding: 15px 32px;
         }
     }
+}
+
+.caixa {
+    padding: 32px;
+    background-color: variables.$colorGray-3;
+    border: solid 1px variables.$colorGray-2;
+    text-align: center;
+    align-items: center;
+    width: 115px;
+    height: 105px;
 }

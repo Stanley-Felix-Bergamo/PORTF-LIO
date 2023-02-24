@@ -1,4 +1,5 @@
 @use "./variables";
+
 .top-nav {
     flex-direction: row;
     align-items: center;
@@ -44,30 +45,6 @@
             cursor: pointer;
             font-size: 18px;
             font-weight: 400;
-
-            &__link {
-                background-color: transparent;
-                display: inline-block;
-                position: relative;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    transform: scaleX(0);
-                    height: 2px;
-                    bottom: 0;
-                    left: 0;
-                    background-color: variables.$colorGreen;
-                    transform-origin: bottom right;
-                    transition: transform 0.25s ease-out;
-                }
-
-                &:hover::after {
-                    transform: scaleX(1);
-                    transform-origin: bottom left;
-                }
-            }
         }
     }
 

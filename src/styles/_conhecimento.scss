@@ -1,0 +1,58 @@
+@use "./variables";
+
+.skill {
+    &__titulo {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        padding-bottom: 30px;
+    }
+}
+
+.tecnologia {
+    padding-bottom: 85px;
+    &__lista {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+
+        &__item {
+            padding: 35px;
+            img {
+                width: 40px;
+                background-color: variables.$colorGray-3;
+            }
+        }
+    }
+}
+
+.competencia {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__titulo {
+        padding-bottom: 30px;
+    }
+
+    .formacao,
+    .curso {
+        border-left: 4px solid variables.$colorGreen;
+        text-align: left;
+        padding-left: 1rem;
+        margin-bottom: 30px;
+
+        h3,
+        p {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tecnologia {
+        &__lista {
+            grid-template-columns: repeat(2, 49%);
+        }
+    }
+}
