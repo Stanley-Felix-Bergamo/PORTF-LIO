@@ -1,5 +1,8 @@
 @use "./variables";
 
+#Conhecimento {
+    padding-bottom: 127px;
+}
 .skill {
     &__titulo {
         text-align: center;
@@ -12,9 +15,8 @@
 .tecnologia {
     padding-bottom: 85px;
     &__lista {
-        text-align: center;
         display: grid;
-        grid-template-columns: repeat(6, 16%);
+        grid-template-columns: repeat(6, 1fr);
 
         &__item {
             display: flex;
@@ -52,6 +54,9 @@
 }
 
 @media (max-width: 820px) {
+    #Conhecimento {
+        padding-bottom: 56px;
+    }
     .skill {
         &__titulo {
             font-size: 24px;
@@ -60,7 +65,7 @@
 
     .tecnologia {
         &__lista {
-            grid-template-columns: repeat(3, 32.33%);
+            grid-template-columns: repeat(3, 1fr);
 
             &__item {
                 img {
@@ -74,7 +79,7 @@
 @media (max-width: 568px) {
     .tecnologia {
         &__lista {
-            grid-template-columns: repeat(2, 49%);
+            grid-template-columns: repeat(2, 1fr);
 
             &__item {
                 img {
