@@ -31,10 +31,17 @@ ion-icon {
     background-color: variables.$colorGray-3;
     border-radius: 180px;
     padding: 17px;
+    transition: 1s;
 
     @media (max-width: 768px) {
         font-size: 24px;
         padding: 10px;
+    }
+
+    &:hover {
+        background-color: lighten(variables.$colorGray-3, 15%);
+        border: 2px solid lighten(variables.$colorGray-3, 15%);
+        opacity: 1;
     }
 }
 
@@ -190,4 +197,22 @@ footer {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
 }
