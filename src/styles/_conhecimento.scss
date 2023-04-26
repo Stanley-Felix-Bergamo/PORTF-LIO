@@ -13,15 +13,16 @@
 }
 
 .tecnologia {
+    text-align: center;
     padding-bottom: 85px;
     &__lista {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
 
         &__item {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
+            padding-bottom: 20px;
+
             img {
                 width: 40px;
                 background-color: variables.$colorGray-3;
@@ -65,8 +66,6 @@
 
     .tecnologia {
         &__lista {
-            grid-template-columns: repeat(3, 1fr);
-
             &__item {
                 img {
                     width: 30px;
@@ -76,9 +75,10 @@
     }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 425px) {
     .tecnologia {
         &__lista {
+            display: grid;
             grid-template-columns: repeat(2, 1fr);
 
             &__item {
