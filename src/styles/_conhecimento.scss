@@ -15,8 +15,8 @@
 .tecnologia {
     padding-bottom: 85px;
     &__lista {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        display: flex;
+        justify-content: space-evenly;
 
         &__item {
             display: flex;
